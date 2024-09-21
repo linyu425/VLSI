@@ -1,0 +1,144 @@
+irun: 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun	15.20-s084: Started on Sep 19, 2024 at 15:26:14 CST
+irun
+	/home/linjinyu/VLSI/HW1/P76121673/./sim/top_tb.sv
+	+incdir+/home/linjinyu/VLSI/HW1/P76121673/./src+/home/linjinyu/VLSI/HW1/P76121673/./include+/home/linjinyu/VLSI/HW1/P76121673/./sim
+	+define+prog4
+	-define CYCLE=14.0
+	-define MAX=100000
+	+access+r
+	+prog_path=/home/linjinyu/VLSI/HW1/P76121673/./sim/prog4
+
+   User defined plus("+") options:
+	+prog_path=/home/linjinyu/VLSI/HW1/P76121673/./sim/prog4
+
+file: /home/linjinyu/VLSI/HW1/P76121673/./sim/top_tb.sv
+`define CYCLE 14.0 // Cycle time
+                                |
+ncvlog: *W,MACNDF (/home/linjinyu/VLSI/HW1/P76121673/./sim/top_tb.sv,2|32): The text macro 'CYCLE' has also been defined on the command line using the -DEFINE command line option.  The compiler will ignore the definition found in the Verilog source code.
+`define MAX 100000 // Max cycle number
+                                      |
+ncvlog: *W,MACNDF (/home/linjinyu/VLSI/HW1/P76121673/./sim/top_tb.sv,3|38): The text macro 'MAX' has also been defined on the command line using the -DEFINE command line option.  The compiler will ignore the definition found in the Verilog source code.
+    $value$plusargs("prog_path=%s", prog_path);
+                  |
+ncvlog: *W,NOSYST (/home/linjinyu/VLSI/HW1/P76121673/./sim/top_tb.sv,42|18): System function '$value$plusargs' invoked as a task. Return value will be ignored.
+	$value$plusargs("rdcycle=%s", rdcycle);
+	              |
+ncvlog: *W,NOSYST (/home/linjinyu/VLSI/HW1/P76121673/./sim/top_tb.sv,43|15): System function '$value$plusargs' invoked as a task. Return value will be ignored.
+      $fscanf(gf, "%h\n", GOLDEN[num]);
+            |
+ncvlog: *W,NOSYST (/home/linjinyu/VLSI/HW1/P76121673/./sim/top_tb.sv,58|12): System function '$fscanf' invoked as a task. Return value will be ignored.
+ncvlog: *W,SPDUSD: Include directory /home/linjinyu/VLSI/HW1/P76121673/./include given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 3
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top_tb
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+    $readmemh({prog_path, "/main0.hex"}, TOP.IM1.i_SRAM.Memory_byte0);
+                                                                   |
+ncelab: *W,MEMODR (../sim/top_tb.sv,46|67): $readmem default memory order incompatible with IEEE1364.
+    $readmemh({prog_path, "/main0.hex"}, TOP.DM1.i_SRAM.Memory_byte0); 
+                                                                   |
+ncelab: *W,MEMODR (../sim/top_tb.sv,47|67): $readmem default memory order incompatible with IEEE1364.
+    $readmemh({prog_path, "/main1.hex"}, TOP.IM1.i_SRAM.Memory_byte1);
+                                                                   |
+ncelab: *W,MEMODR (../sim/top_tb.sv,48|67): $readmem default memory order incompatible with IEEE1364.
+    $readmemh({prog_path, "/main1.hex"}, TOP.DM1.i_SRAM.Memory_byte1); 
+                                                                   |
+ncelab: *W,MEMODR (../sim/top_tb.sv,49|67): $readmem default memory order incompatible with IEEE1364.
+    $readmemh({prog_path, "/main2.hex"}, TOP.IM1.i_SRAM.Memory_byte2);
+                                                                   |
+ncelab: *W,MEMODR (../sim/top_tb.sv,50|67): $readmem default memory order incompatible with IEEE1364.
+    $readmemh({prog_path, "/main2.hex"}, TOP.DM1.i_SRAM.Memory_byte2); 
+                                                                   |
+ncelab: *W,MEMODR (../sim/top_tb.sv,51|67): $readmem default memory order incompatible with IEEE1364.
+    $readmemh({prog_path, "/main3.hex"}, TOP.IM1.i_SRAM.Memory_byte3);
+                                                                   |
+ncelab: *W,MEMODR (../sim/top_tb.sv,52|67): $readmem default memory order incompatible with IEEE1364.
+    $readmemh({prog_path, "/main3.hex"}, TOP.DM1.i_SRAM.Memory_byte3); 
+                                                                   |
+ncelab: *W,MEMODR (../sim/top_tb.sv,53|67): $readmem default memory order incompatible with IEEE1364.
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                 21      19
+		Registers:              105      97
+		Scalar wires:           194       -
+		Expanded wires:         136       6
+		Vectored wires:          54       -
+		Always blocks:           24      22
+		Initial blocks:           2       2
+		Cont. assignments:      104      96
+		Pseudo assignments:      11      11
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.top_tb:sv
+Loading snapshot worklib.top_tb:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+ncsim: *W,RMEMNOF: $readmem error: open failed on file "/home/linjinyu/VLSI/HW1/P76121673/./sim/prog4/main0.hex".
+            File: ../sim/top_tb.sv, line = 46, pos = 67
+           Scope: top_tb
+            Time: 14 NS + 0
+
+ncsim: *W,RMEMNOF: $readmem error: open failed on file "/home/linjinyu/VLSI/HW1/P76121673/./sim/prog4/main0.hex".
+            File: ../sim/top_tb.sv, line = 47, pos = 67
+           Scope: top_tb
+            Time: 14 NS + 0
+
+ncsim: *W,RMEMNOF: $readmem error: open failed on file "/home/linjinyu/VLSI/HW1/P76121673/./sim/prog4/main1.hex".
+            File: ../sim/top_tb.sv, line = 48, pos = 67
+           Scope: top_tb
+            Time: 14 NS + 0
+
+ncsim: *W,RMEMNOF: $readmem error: open failed on file "/home/linjinyu/VLSI/HW1/P76121673/./sim/prog4/main1.hex".
+            File: ../sim/top_tb.sv, line = 49, pos = 67
+           Scope: top_tb
+            Time: 14 NS + 0
+
+ncsim: *W,RMEMNOF: $readmem error: open failed on file "/home/linjinyu/VLSI/HW1/P76121673/./sim/prog4/main2.hex".
+            File: ../sim/top_tb.sv, line = 50, pos = 67
+           Scope: top_tb
+            Time: 14 NS + 0
+
+ncsim: *W,RMEMNOF: $readmem error: open failed on file "/home/linjinyu/VLSI/HW1/P76121673/./sim/prog4/main2.hex".
+            File: ../sim/top_tb.sv, line = 51, pos = 67
+           Scope: top_tb
+            Time: 14 NS + 0
+
+ncsim: *W,RMEMNOF: $readmem error: open failed on file "/home/linjinyu/VLSI/HW1/P76121673/./sim/prog4/main3.hex".
+            File: ../sim/top_tb.sv, line = 52, pos = 67
+           Scope: top_tb
+            Time: 14 NS + 0
+
+ncsim: *W,RMEMNOF: $readmem error: open failed on file "/home/linjinyu/VLSI/HW1/P76121673/./sim/prog4/main3.hex".
+            File: ../sim/top_tb.sv, line = 53, pos = 67
+           Scope: top_tb
+            Time: 14 NS + 0
+
+DM[8192] = xxxxxxxx, expect = 00375f00
+DM[8193] = xxxxxxxx, expect = 00000000
+DM[8194] = xxxxxxxx, expect = 0000129b
+SIM_END(16383) = xxxxxxxx, expect = ffffffff
+
+
+
+
+        ****************************               
+        **                        **       |__||  
+        **  OOPS!!                **      / X,X  | 
+        **                        **    /_____   | 
+        **  Simulation Failed!!   **   /^ ^ ^ \  |
+        **                        **  |^ ^ ^ ^ |w| 
+        ****************************   \m___m__|_|
+         Totally has           3 errors                     
+
+
+Simulation complete via $finish(1) at time 1400 US + 0
+../sim/top_tb.sv:126     $finish;
+ncsim> exit
+TOOL:	irun	15.20-s084: Exiting on Sep 19, 2024 at 15:26:15 CST  (total: 00:00:01)

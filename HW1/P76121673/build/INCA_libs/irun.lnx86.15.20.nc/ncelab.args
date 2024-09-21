@@ -1,0 +1,21 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
++prog_path=/home/linjinyu/VLSI/HW1/P76121673/./sim/prog4
++incdir+/home/linjinyu/VLSI/HW1/P76121673/./src+/home/linjinyu/VLSI/HW1/P76121673/./include+/home/linjinyu/VLSI/HW1/P76121673/./sim
++define+prog4
++access+r
+-ACCESS
++r
+-MESSAGES
+-XLMODE
+./INCA_libs/irun.lnx86.15.20.nc
+-RUNMODE
+-CDSLIB
+./INCA_libs/irun.lnx86.15.20.nc/cds.lib
+-HDLVAR
+./INCA_libs/irun.lnx86.15.20.nc/hdl.var
+-WORK
+worklib
+-HASXLMODE

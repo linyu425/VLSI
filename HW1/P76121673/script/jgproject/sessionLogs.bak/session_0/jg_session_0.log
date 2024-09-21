@@ -1,0 +1,118 @@
+#----------------------------------------
+# JasperGold Version Info
+# tool      : JasperGold 2018.03
+# platform  : Linux 3.10.0-693.el7.x86_64
+# version   : 2018.03p001 64 bits
+# build date: 2018.04.24 18:13:05 PDT
+#----------------------------------------
+# started Tue Sep 26 23:19:53 CST 2023
+# hostname  : vlsicad6
+# pid       : 2685
+# arguments : '-label' 'session_0' '-console' 'vlsicad6:40745' '-style' 'windows' '-data' 'AQAAADx/////AAAAAAAAA3oBAAAAEABMAE0AUgBFAE0ATwBWAEU=' '-proj' '/home/user2/vsd23/vsd2323/Desktop/P76121673_HW1_final/script/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/user2/vsd23/vsd2323/Desktop/P76121673_HW1_final/script/jgproject/.tmp/.initCmds.tcl' 'superlint.tcl'
+
+Any disclosure about the Cadence Design Systems software or its use
+model to any third party violates the written Non-Disclosure Agreement
+between Cadence Design Systems, Inc. and the customer.
+
+THIS SOFTWARE CONTAINS CONFIDENTIAL INFORMATION AND TRADE SECRETS OF
+CADENCE DESIGN SYSTEMS, INC. USE, DISCLOSURE, OR REPRODUCTION IS
+PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF CADENCE
+DESIGN SYSTEMS, INC.
+
+Copyright (C) 2000-2018 Cadence Design Systems, Inc. All Rights
+Reserved.  Unpublished -- rights reserved under the copyright laws of
+the United States.
+
+This product includes software developed by others and redistributed
+according to license agreement. See doc/third_party_readme.txt for
+further details.
+
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c) (1) (ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c) (1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+
+                          Cadence Design Systems, Inc. 
+                          2655 Seely Avenue
+                          San Jose, CA 95134
+                          Phone: 408.943.1234
+
+For technical assistance visit http://support.cadence.com.
+
+JasperGold Apps Analysis Session - /home/user2/vsd23/vsd2323/Desktop/P76121673_HW1_final/script/jgproject/sessionLogs/session_0
+
+INFO: successfully checked out licenses "jasper_interactive" and "jasper_dao".
+INFO: reading configuration file "/home/user2/vsd23/vsd2323/.config/jasper/jaspergold.conf".
+% check_superlint -init
+% clear -all
+INFO (IPF121): Cleared environment completely for new design analysis.
+% 
+% # Config rules
+% config_rtlds -rule -enable -domain { LINT }
+% config_rtlds -rule -disable -tag { CAS_IS_DFRC SIG_IS_DLCK SIG_NO_TGFL SIG_NO_TGRS SIG_NO_TGST FSM_NO_MTRN FSM_NO_TRRN }
+% # vsd2018_constrain //
+% config_rtlds -rule  -disable -category { NAMING AUTO_FORMAL_DEAD_CODE AUTO_FORMAL_SIGNALS AUTO_FORMAL_ARITHMETIC_OVERFLOW }
+% config_rtlds -rule  -disable -tag { IDN_NR_SVKY ARY_MS_DRNG IDN_NR_AMKY IDN_NR_CKYW IDN_NR_SVKW ARY_NR_LBND VAR_NR_INDL INS_NR_PTEX INP_NO_USED OTP_NR_ASYA FLP_NR_MXCS OTP_UC_INST OTP_NR_UDRV REG_NR_TRRC INS_NR_INPR MOD_NS_GLGC } 
+% config_rtlds -rule  -disable -tag { REG_NR_RWRC  }
+% config_rtlds -rule  -disable -tag { BUS_IS_FLOT ASG_IS_XRCH }
+% #config_rtlds -rule  -reset -sync
+% # vsd2018_constrain //
+% 
+% analyze -sv +incdir+../include+../src/AHB ../src/top.sv ../sim/SRAM/SRAM_rtl.sv
+[-- (VERI-1482)] Analyzing Verilog file '/usr/cad/cadence/JASPER/jasper_2018.03p001/lib/verilog/packages/std/std.sv' into library 'std'
+[-- (VERI-1482)] Analyzing Verilog file '../src/top.sv'
+[INFO (VERI-1328)] ../src/top.sv(1): analyzing included file '../src/./DEF.sv'
+[INFO (VERI-1328)] ../src/top.sv(2): analyzing included file '../src/./IFIDR_MUX.sv'
+[INFO (VERI-1328)] ../src/./IFIDR_MUX.sv(2): analyzing included file '../src/././PC_MUX.sv'
+[INFO (VERI-1328)] ../src/top.sv(3): analyzing included file '../src/./IDEXER.sv'
+[INFO (VERI-1328)] ../src/./IDEXER.sv(2): analyzing included file '../src/././IMMG.sv'
+[INFO (VERI-1328)] ../src/./IDEXER.sv(3): analyzing included file '../src/././REGFILE.sv'
+[INFO (VERI-1328)] ../src/./IDEXER.sv(4): analyzing included file '../src/././CONTROL_UNIT.sv'
+[INFO (VERI-1328)] ../src/top.sv(4): analyzing included file '../src/./EXEMEMR.sv'
+[INFO (VERI-1328)] ../src/./EXEMEMR.sv(2): analyzing included file '../src/././ALU.sv'
+[INFO (VERI-1328)] ../src/./EXEMEMR.sv(3): analyzing included file '../src/././ALUCONTROL.sv'
+[ERROR (VERI-1128)] ../src/././ALUCONTROL.sv(61): 'Xor' is not declared
+[ERROR (VERI-1128)] ../src/././ALUCONTROL.sv(96): 'Add' is not declared
+[ERROR (VERI-1128)] ../src/././ALUCONTROL.sv(98): 'Add' is not declared
+[ERROR (VERI-1072)] ../src/././ALUCONTROL.sv(115): module 'ALUCONTROL' ignored due to previous errors
+[INFO (VERI-1328)] ../src/./EXEMEMR.sv(4): analyzing included file '../src/././COUNTER.sv'
+[ERROR (VERI-1072)] ../src/././COUNTER.sv(31): module 'COUNTER' ignored due to previous errors
+[ERROR (VERI-1072)] ../src/./EXEMEMR.sv(149): module 'EXEMEMR' ignored due to previous errors
+[INFO (VERI-1328)] ../src/top.sv(5): analyzing included file '../src/./MEMWBR.sv'
+[ERROR (VERI-1072)] ../src/./MEMWBR.sv(88): module 'MEMWBR' ignored due to previous errors
+[INFO (VERI-1328)] ../src/top.sv(6): analyzing included file '../src/./WB.sv'
+[ERROR (VERI-1072)] ../src/./WB.sv(21): module 'WB' ignored due to previous errors
+[INFO (VERI-1328)] ../src/top.sv(7): analyzing included file '../src/./SRAM_wrapper.sv'
+[ERROR (VERI-1072)] ../src/./SRAM_wrapper.sv(99): module 'SRAM_wrapper' ignored due to previous errors
+[INFO (VERI-1328)] ../src/top.sv(8): analyzing included file '../src/./FORWARDUNIT.sv'
+[ERROR (VERI-1072)] ../src/./FORWARDUNIT.sv(24): module 'FORWARDUNIT' ignored due to previous errors
+[INFO (VERI-1328)] ../src/top.sv(9): analyzing included file '../src/./BRANCHCONTROL.sv'
+[ERROR (VERI-1072)] ../src/./BRANCHCONTROL.sv(30): module 'BRANCHCONTROL' ignored due to previous errors
+[INFO (VERI-1328)] ../src/top.sv(10): analyzing included file '../src/./HAZARDCONTROL.sv'
+[ERROR (VERI-1072)] ../src/./HAZARDCONTROL.sv(48): module 'HAZARDCONTROL' ignored due to previous errors
+[ERROR (VERI-1072)] ../src/top.sv(277): module 'top' ignored due to previous errors
+Summary of errors detected:
+	[ERROR (VERI-1128)] ../src/././ALUCONTROL.sv(61): 'Xor' is not declared
+	[ERROR (VERI-1128)] ../src/././ALUCONTROL.sv(96): 'Add' is not declared
+	[ERROR (VERI-1128)] ../src/././ALUCONTROL.sv(98): 'Add' is not declared
+	[ERROR (VERI-1072)] ../src/././ALUCONTROL.sv(115): module 'ALUCONTROL' ignored due to previous errors
+	[ERROR (VERI-1072)] ../src/././COUNTER.sv(31): module 'COUNTER' ignored due to previous errors
+	[ERROR (VERI-1072)] ../src/./EXEMEMR.sv(149): module 'EXEMEMR' ignored due to previous errors
+	[ERROR (VERI-1072)] ../src/./MEMWBR.sv(88): module 'MEMWBR' ignored due to previous errors
+	[ERROR (VERI-1072)] ../src/./WB.sv(21): module 'WB' ignored due to previous errors
+	[ERROR (VERI-1072)] ../src/./SRAM_wrapper.sv(99): module 'SRAM_wrapper' ignored due to previous errors
+	[ERROR (VERI-1072)] ../src/./FORWARDUNIT.sv(24): module 'FORWARDUNIT' ignored due to previous errors
+	[ERROR (VERI-1072)] ../src/./BRANCHCONTROL.sv(30): module 'BRANCHCONTROL' ignored due to previous errors
+	[ERROR (VERI-1072)] ../src/./HAZARDCONTROL.sv(48): module 'HAZARDCONTROL' ignored due to previous errors
+	[ERROR (VERI-1072)] ../src/top.sv(277): module 'top' ignored due to previous errors
+ERROR (ENL034): 13 errors detected in the design file(s).
+
+ERROR: problem encountered at line 14 in file superlint.tcl
+
+INFO (IPL005): Received request to exit from the console.
+INFO: Waiting for proof threads to stop...
+INFO: Proof threads stopped.

@@ -1,0 +1,22 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
++prog_path=/home/linjinyu/VLSI/final/VSD2024_FINAL/./sim/conv0
++incdir+/home/linjinyu/VLSI/final/VSD2024_FINAL/./src+/home/linjinyu/VLSI/final/VSD2024_FINAL/./src/AXI+/home/linjinyu/VLSI/final/VSD2024_FINAL/./include+/home/linjinyu/VLSI/final/VSD2024_FINAL/./sim
++define+conv0
++access+r
++nc64bit
+-ACCESS
++r
+-MESSAGES
+-XLMODE
+./INCA_libs/irun.lnx8664.15.20.nc
+-RUNMODE
+-CDSLIB
+./INCA_libs/irun.lnx8664.15.20.nc/cds.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.15.20.nc/hdl.var
+-WORK
+worklib
+-HASXLMODE

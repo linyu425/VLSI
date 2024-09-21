@@ -1,0 +1,23 @@
+irun: 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun	15.20-s084: Started on Sep 19, 2024 at 15:33:04 CST
+irun
+	-R
+	-sverilog
+	/home/linjinyu/VLSI/HW2/P76121673/./sim/top_tb.sv
+	-debug_access+all
+	-full64
+	+incdir+/home/linjinyu/VLSI/HW2/P76121673/./src+/home/linjinyu/VLSI/HW2/P76121673/./src/AXI+/home/linjinyu/VLSI/HW2/P76121673/./include+/home/linjinyu/VLSI/HW2/P76121673/./sim
+	+define+prog0
+	+define+CYCLE=9.0
+	+define+MAX=300000
+	+prog_path=/home/linjinyu/VLSI/HW2/P76121673/./sim/prog0
+	+rdcycle=1
+
+   User defined plus("+") options:
+	+prog_path=/home/linjinyu/VLSI/HW2/P76121673/./sim/prog0
+	+rdcycle=1
+
+irun: *E,BDOPT: Unknown option -sverilog.
+irun: *E,BDOPT: Unknown option -debug_access+all.
+irun: *E,BDOPT: Unknown option -full64.
+TOOL:	irun	15.20-s084: Exiting on Sep 19, 2024 at 15:33:04 CST  (total: 00:00:00)

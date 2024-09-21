@@ -1,0 +1,7 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(20Sep2024:15:32:37):( irun /home/linjinyu/VLSI/final/VSD2024_FINAL/./sim/top_tb_predicted.sv +incdir+/home/linjinyu/VLSI/final/VSD2024_FINAL/./src+/home/linjinyu/VLSI/final/VSD2024_FINAL/./src/AXI+/home/linjinyu/VLSI/final/VSD2024_FINAL/./include+/home/linjinyu/VLSI/final/VSD2024_FINAL/./sim +define+conv_all +access+r +nc64bit +prog_path=/home/linjinyu/VLSI/final/VSD2024_FINAL/./sim/conv_all )
+s2::(20Sep2024:15:34:25):( irun /home/linjinyu/VLSI/final/VSD2024_FINAL/./sim/top_tb_predicted.sv +incdir+/home/linjinyu/VLSI/final/VSD2024_FINAL/./src+/home/linjinyu/VLSI/final/VSD2024_FINAL/./src/AXI+/home/linjinyu/VLSI/final/VSD2024_FINAL/./include+/home/linjinyu/VLSI/final/VSD2024_FINAL/./sim +define+fc0 +access+r +nc64bit +prog_path=/home/linjinyu/VLSI/final/VSD2024_FINAL/./sim/fc0 )
+s3::(20Sep2024:15:35:44):( irun /home/linjinyu/VLSI/final/VSD2024_FINAL/./sim/top_tb_conv.sv +incdir+/home/linjinyu/VLSI/final/VSD2024_FINAL/./src+/home/linjinyu/VLSI/final/VSD2024_FINAL/./src/AXI+/home/linjinyu/VLSI/final/VSD2024_FINAL/./include+/home/linjinyu/VLSI/final/VSD2024_FINAL/./sim +define+conv0 +access+r +nc64bit +prog_path=/home/linjinyu/VLSI/final/VSD2024_FINAL/./sim/conv0 )

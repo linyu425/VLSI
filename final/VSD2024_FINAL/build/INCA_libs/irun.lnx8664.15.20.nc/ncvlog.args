@@ -1,0 +1,27 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-XLMODE
+./INCA_libs/irun.lnx8664.15.20.nc
+-RUNMODE
+/home/linjinyu/VLSI/final/VSD2024_FINAL/./sim/top_tb_conv.sv
+-INCDIR
+/home/linjinyu/VLSI/final/VSD2024_FINAL/./src
+-INCDIR
+/home/linjinyu/VLSI/final/VSD2024_FINAL/./src/AXI
+-INCDIR
+/home/linjinyu/VLSI/final/VSD2024_FINAL/./include
+-INCDIR
+/home/linjinyu/VLSI/final/VSD2024_FINAL/./sim
+-DEFINE
+conv0
+-CDSLIB
+./INCA_libs/irun.lnx8664.15.20.nc/cdsrun.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.15.20.nc/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./INCA_libs/irun.lnx8664.15.20.nc/xllibs
+-ALLOWUNBOUND

@@ -1,0 +1,14 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-INCDIR
+/home/linjinyu/VLSI/final/VSD2024_FINAL/./src
+-INCDIR
+/home/linjinyu/VLSI/final/VSD2024_FINAL/./src/AXI
+-INCDIR
+/home/linjinyu/VLSI/final/VSD2024_FINAL/./include
+-INCDIR
+/home/linjinyu/VLSI/final/VSD2024_FINAL/./sim
+-DEFINE
+conv0

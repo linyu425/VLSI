@@ -1,0 +1,16 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-INCDIR
+/home/linjinyu/VLSI/HW1/P76121673/./src
+-INCDIR
+/home/linjinyu/VLSI/HW1/P76121673/./include
+-INCDIR
+/home/linjinyu/VLSI/HW1/P76121673/./sim
+-DEFINE
+prog4
+-DEFINE
+CYCLE=14.0
+-DEFINE
+MAX=100000
